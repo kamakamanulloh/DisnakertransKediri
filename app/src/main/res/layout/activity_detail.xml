@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Jenis_pelatihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis pelatihan" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan NIK : (contoh : 3506234567890987"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/txtnik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Nama : (contoh : Eko budi satrio)" />
+
+            <EditText
+                android:id="@+id/txtnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan Nama"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Alamat(contoh : RT/RW 002/0002 Dsn Wangkal Ds WangkalKepuh Kec.Gudo Kab.Jombang"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/txtalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan Alamat"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan No HP :(contoh : 085707297725)" />
+
+            <EditText
+                android:id="@+id/txtnohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan No hp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Tempat Lahir : (Contoh : Jommbang)"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/txttl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan Tempat Lahir"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Tanggal Lahir (Contoh 20-05-1995 )"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/txttgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan Tanggal  Lahir"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/pndd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Pendidikan Terakhir : (Contoh : SMK) "
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/txtpend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan Pendidikan Terakhir"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:entries="@array/agama"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jenis Kelamin"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupNb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1" >
+
+                <RadioButton
+                    android:id="@+id/radioAcer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="laki-laki" />
+
+                <RadioButton
+                    android:id="@+id/radioAsus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="perempuan" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Kirim" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
